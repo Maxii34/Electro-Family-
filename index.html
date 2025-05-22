@@ -18,7 +18,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-dark-subtle">
         <div class="container">
           <a class="navbar-brand" href="/index.html">Navbar</a>
           <button
@@ -55,10 +55,7 @@
                   data-bs-toggle="modal"
                   data-bs-target="#modalCarrito"
                 >
-                  <i
-                    class="bi bi-cart3"
-                    style="font-size: 1.8rem; color: #000"
-                  ></i>
+                  <i class="bi bi-cart3"></i>
                   <span
                     class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
                   >
@@ -99,17 +96,20 @@
               <button class="btn btn-outline-success me-2" type="submit">
                 <i class="bi bi-search"></i>
               </button>
-              <button class="btn btn-outline-success me-1" type="submit">
-                Ingresar
+              <button
+                type="button"
+                class="btn btn-dark mx-1"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Login
               </button>
-              <button class="btn btn-outline-success me-1" type="submit">
-                Registrate
-              </button>
+              <a href="/registro.html" class="btn btn-dark me-1">Register</a>
 
-              <!-- Ícono del carrito con modal (visible siempre) -->
+              <!-- Ícono del carrito con modal-->
               <a
                 href="#"
-                class="position-relative ms-3 border  px-2 rounded"
+                class="position-relative ms-3 border px-2 rounded"
                 data-bs-toggle="modal"
                 data-bs-target="#modalCarrito"
               >
@@ -129,6 +129,7 @@
 
     <main>
       <section>
+        <!--Modal-carrito-->
         <div
           class="modal fade"
           id="modalCarrito"
@@ -183,6 +184,73 @@
                 </button>
                 <button type="button" class="btn btn-success">
                   Finalizar compra
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Iniciar Sesion
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="tuemail@ejemplo.com"
+                      required
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="contraseña"
+                      required
+                    />
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 my-2">
+                    Iniciar sesión
+                  </button>
+                  <button type="submit" class="btn btn-info w-100 my-2">
+                    Iniciar con Google
+                  </button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cerrar
                 </button>
               </div>
             </div>

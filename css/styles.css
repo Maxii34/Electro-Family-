@@ -20,3 +20,10 @@ main {
     overflow: hidden;
     object-fit: cover;
 }
+
+.fondo-degradado {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px;
+  border-radius: 50px;
+}
+

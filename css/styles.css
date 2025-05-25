@@ -27,3 +27,17 @@ main {
   border-radius: 50px;
 }
 
+.efecto {
+    color: rgba(99, 74, 11, 0.966);
+    border: 1px solid goldenrod;
+    padding: 6px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+.Descuento {
+    padding: 3px;
+    background-color: #d68910 ;
+    border-radius: 7px;
+}

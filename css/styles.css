@@ -1,12 +1,17 @@
 
 
-body {
+.body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     overflow: hidden;
 }
 
-main {
+.main {
     flex: 1;
+}
+
+.metodos-pagos {
+    width: 100px;
+    height: 80px;
 }

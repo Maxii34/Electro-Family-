@@ -8,5 +8,5 @@ body {
 }
 
 main {
-    flex-wrap: 1;
+    flex: 1;
 }

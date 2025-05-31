@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="autor" content="Maximiliano Ordoñez" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,13 +16,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Electro Family</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg  px-3">
+      <nav class="navbar navbar-expand-lg px-3">
         <div class="container">
-          <a class="navbar-brand" href="/index.html">Navbar</a>
+          <a class="navbar-brand text-light fs-3" href="/index.html"
+            >Electro Family <i class="bi bi-basket2-fill"></i
+          ></a>
           <button
             class="navbar-toggler ms-auto"
             type="button"
@@ -37,18 +41,18 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
+                  class="nav-link active text-light"
                   aria-current="page"
                   href="/index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ofertas</a>
+                <a class="nav-link text-light" href="#">Ofertas</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle text-light"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -62,7 +66,7 @@
                   </li>
                   <li><a class="dropdown-item" href="#">Contacto</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Otra opción</a></li>
+                  <li><a class="dropdown-item" href="#">Sobre Mi</a></li>
                 </ul>
               </li>
             </ul>
@@ -92,7 +96,7 @@
           <div class="m-2">
             <button
               type="button"
-              class="btn btn-outline-secondary position-relative"
+              class="btn btn-outline-dark position-relative"
               data-bs-toggle="modal"
               data-bs-target="#modalCarrito"
             >
@@ -106,9 +110,28 @@
           </div>
         </div>
       </nav>
+      <div class="bg-dark marcas-marquee">
+        <p class="m-0">
+          <span class="mx-3">Drean</span>
+          <span class="mx-3">Patrick</span>
+          <span class="mx-3">BGH</span>
+          <span class="mx-3">Siam</span>
+          <span class="mx-3">Liliana</span>
+          <span class="mx-3">Atma</span>
+          <span class="mx-3">Peabody</span>
+          <span class="mx-3">Philco</span>
+          <span class="mx-3">Sanyo</span>
+          <span class="mx-3">Noblex</span>
+          <span class="mx-3">LG</span>
+          <span class="mx-3">Pc Box</span>
+          <span class="mx-3">Newsan</span>
+          <span class="mx-3">Tonomac</span>
+          <span class="mx-3">SanSung</span>
+        </p>
+      </div>
     </header>
 
-    <main class="container">
+    <main class="container-fluid">
       <section class="mb-4 mt-1">
         <div
           id="carouselExampleIndicators"
@@ -202,12 +225,13 @@
           </button>
         </div>
       </section>
+
       <!--Electrodomesticos-->
       <section class="my-4">
         <h1 class="display-6">Electrodomesticos</h1>
       </section>
 
-      <section class="my-4">
+      <section class="my-4 bg-css-grilla px-3 py-2 rounded">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
@@ -232,10 +256,10 @@
                 </p>
                 <div>
                   <p
-                  class="efecto d-flex justify-content-center text-nowrap text-center my-2 shadow"
-                >
-                  12x $66,589 - Sin interes.
-                </p>
+                    class="efecto d-flex justify-content-center text-nowrap text-center my-2 shadow"
+                  >
+                    12x $66,589 - Sin interes.
+                  </p>
                 </div>
                 <div class="d-flex justify-content-evenly">
                   <a
@@ -378,7 +402,7 @@
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
               <img
-                src="/img/refrigerador-puerta-francesa-acero-inoxidable-elegante_632498-25861.avif"
+                src="/img/Screenshot_tvled1.png"
                 class="card-img-top img-cards"
                 alt="..."
               />
@@ -419,7 +443,7 @@
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
               <img
-                src="/img/refrigerador-puerta-francesa-acero-inoxidable-elegante_632498-25861.avif"
+                src="/img/Screenshot_tvled2.png"
                 class="card-img-top img-cards"
                 alt="..."
               />
@@ -460,7 +484,7 @@
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
               <img
-                src="/img/refrigerador-puerta-francesa-acero-inoxidable-elegante_632498-25861.avif"
+                src="/img/Screenshot_tvled3.png"
                 class="card-img-top img-cards"
                 alt="..."
               />
@@ -501,7 +525,7 @@
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
               <img
-                src="/img/refrigerador-puerta-francesa-acero-inoxidable-elegante_632498-25861.avif"
+                src="/img/Screenshot_tvled4.png"
                 class="card-img-top img-cards"
                 alt="..."
               />
@@ -547,7 +571,7 @@
         <h1 class="display-6">Tecnología</h1>
       </section>
 
-      <section class="my-4">
+      <section class="my-4 bg-css-grilla px-3 py-2 rounded">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
@@ -572,7 +596,8 @@
                 <p class="fs-5 p-0 m-0"><strong>$799,078</strong></p>
                 <p class="card-text">
                   <span class="text-decoration-line-through">$1,230,899</span
-                  ><span class="Descuento ms-3 text-light shadow">35% OFF</span>
+                  ><span class="Descuento ms-1 text-light shadow">40% OFF</span>
+                  <span class="Des-hotsale text-light shadow">Hot Sale</span>
                 </p>
                 <p class="m-0 text-body-tertiary">
                   Precio sin impuestos nacionales
@@ -620,7 +645,8 @@
                 <p class="fs-5 p-0 m-0"><strong>$799,078</strong></p>
                 <p class="card-text">
                   <span class="text-decoration-line-through">$1,230,899</span
-                  ><span class="Descuento ms-3 text-light shadow">35% OFF</span>
+                  ><span class="Descuento ms-1 text-light shadow">40% OFF</span>
+                  <span class="Des-hotsale text-light shadow">Hot Sale</span>
                 </p>
                 <p class="m-0 text-body-tertiary">
                   Precio sin impuestos nacionales
@@ -668,7 +694,8 @@
                 <p class="fs-5 p-0 m-0"><strong>$799,078</strong></p>
                 <p class="card-text">
                   <span class="text-decoration-line-through">$1,230,899</span
-                  ><span class="Descuento ms-3 text-light shadow">35% OFF</span>
+                  ><span class="Descuento ms-1 text-light shadow">40% OFF</span>
+                  <span class="Des-hotsale text-light shadow">Hot Sale</span>
                 </p>
                 <p class="m-0 text-body-tertiary">
                   Precio sin impuestos nacionales
@@ -716,7 +743,8 @@
                 <p class="fs-5 p-0 m-0"><strong>$799,078</strong></p>
                 <p class="card-text">
                   <span class="text-decoration-line-through">$1,230,899</span
-                  ><span class="Descuento ms-3 text-light shadow">35% OFF</span>
+                  ><span class="Descuento ms-1 text-light shadow">40% OFF</span>
+                  <span class="Des-hotsale text-light shadow">Hot Sale</span>
                 </p>
                 <p class="m-0 text-body-tertiary">
                   Precio sin impuestos nacionales
@@ -749,13 +777,13 @@
         <h1 class="display-6">Artículos para el hogar</h1>
       </section>
 
-      <section class="my-4">
+      <section class="my-4 bg-css-grilla px-3 py-2 rounded">
         <div class="row">
           <div class="col-12 col-md-4 col-lg-3 my-4">
             <div class="card shadow">
               <div class="position-relative">
                 <img
-                  src="/img/cook1299_gfx_bev_spe_os_bvstem7200_espressoslimline_left.webp"
+                  src="/img/Screenshot_hogar3.png"
                   class="card-img-top img-cards"
                   alt="..."
                 />
@@ -803,7 +831,7 @@
             <div class="card shadow">
               <div class="position-relative">
                 <img
-                  src="/img/cook1299_gfx_bev_spe_os_bvstem7200_espressoslimline_left.webp"
+                  src="/img/Screenshot_hogar.png"
                   class="card-img-top img-cards"
                   alt="..."
                 />
@@ -851,7 +879,7 @@
             <div class="card shadow">
               <div class="position-relative">
                 <img
-                  src="/img/cook1299_gfx_bev_spe_os_bvstem7200_espressoslimline_left.webp"
+                  src="/img/Screenshot_hogar5.png"
                   class="card-img-top img-cards"
                   alt="..."
                 />
@@ -899,7 +927,7 @@
             <div class="card shadow">
               <div class="position-relative">
                 <img
-                  src="/img/cook1299_gfx_bev_spe_os_bvstem7200_espressoslimline_left.webp"
+                  src="/img/Screenshot_hogar2.png"
                   class="card-img-top img-cards"
                   alt="..."
                 />
@@ -950,46 +978,42 @@
         <h5 class="text-dark">Publicidad</h5>
         <div class="row">
           <div class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1">
-            <a href=""
-              ><div class="card"">
-                <img src="..." class="card-img-top img-cards" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
+            <div class="card">
+              <img src="..." class="card-img-top img-cards" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
               </div>
-              <img src="" alt="" class=""
-            /></a>
+            </div>
+            <img src="" alt="" class="" />
           </div>
+
           <div class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1">
-            <a href=""
-              ><div class="card"">
-                <img src="..." class="card-img-top img-cards" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
+            <div class="card">
+              <img src="..." class="card-img-top img-cards" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
               </div>
-              <img src="" alt="" class=""
-            /></a>
+            </div>
+            <img src="" alt="" class="" />
           </div>
+
           <div class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1">
-            <a href=""
-              ><div class="card"">
-                <img src="..." class="card-img-top img-cards" alt="..." />
-                <div class="card-body">
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card’s content.
-                  </p>
-                </div>
+            <div class="card">
+              <img src="..." class="card-img-top img-cards" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
               </div>
-              <img src="" alt="" class=""
-            /></a>
+            </div>
+            <img src="" alt="" class="" />
           </div>
         </div>
       </section>
@@ -1016,46 +1040,50 @@
               </div>
               <div class="modal-body">
                 <!-- Producto 1 -->
-                <div class="d-flex align-items-center mb-3 border-bottom pb-2">
+                <div
+                  class="d-flex align-items-center mb-3 border-bottom pb-2 div-carrito"
+                >
                   <img
-                    src="https://via.placeholder.com/60"
+                    src="/img/electrodomestico_1.jpg"
                     alt="Producto 1"
-                    class="me-3"
+                    class="me-3 carrito-img"
                   />
                   <div>
-                    <h6 class="mb-1">Producto A</h6>
-                    <p class="mb-1 text-muted">$1.000</p>
-                    <button class="btn btn-sm btn-outline-danger">
+                    <h6 class="card-title">Producto A</h6>
+                    <p class="card-text text-muted">$190.780</p>
+                    <button class="btn btn-sm btn-outline-dark">
                       Eliminar
                     </button>
                   </div>
                 </div>
+
                 <!-- Producto 2 -->
                 <div class="d-flex align-items-center mb-3 border-bottom pb-2">
                   <img
-                    src="https://via.placeholder.com/60"
+                    src="/img/Screenshot_hogar5.png"
                     alt="Producto 2"
-                    class="me-3"
+                    class="me-3 carrito-img"
                   />
                   <div>
                     <h6 class="mb-1">Producto B</h6>
                     <p class="mb-1 text-muted">$1.500</p>
-                    <button class="btn btn-sm btn-outline-danger">
+                    <button class="btn btn-sm btn-outline-dark">
                       Eliminar
                     </button>
                   </div>
                 </div>
+
                 <!-- Producto 3 -->
                 <div class="d-flex align-items-center mb-3 border-bottom pb-2">
                   <img
-                    src="https://via.placeholder.com/60"
+                    src="/img/Screenshot_tvled2.png"
                     alt="Producto 3"
-                    class="me-3"
+                    class="me-3 carrito-img"
                   />
                   <div>
                     <h6 class="mb-1">Producto C</h6>
                     <p class="mb-1 text-muted">$2.000</p>
-                    <button class="btn btn-sm btn-outline-danger">
+                    <button class="btn btn-sm btn-outline-dark">
                       Eliminar
                     </button>
                   </div>
@@ -1068,6 +1096,7 @@
             </div>
           </div>
         </div>
+
         <!-- Modal -->
         <div
           class="modal fade"
@@ -1077,9 +1106,9 @@
           aria-hidden="true"
         >
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content bg-dark">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
                   Iniciar Sesion
                 </h1>
                 <button
@@ -1092,7 +1121,7 @@
               <div class="modal-body">
                 <form>
                   <div class="mb-3">
-                    <label for="email" class="form-label"
+                    <label for="email" class="form-label text-light"
                       >Correo electrónico</label
                     >
                     <input
@@ -1105,7 +1134,9 @@
                   </div>
 
                   <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
+                    <label for="password" class="form-label text-light"
+                      >Contraseña</label
+                    >
                     <input
                       type="password"
                       class="form-control"
@@ -1137,21 +1168,19 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark py-4">
+    <footer class="py-4">
       <div class="container">
         <div
           class="row justify-content-center justify-content-lg-start text-center text-lg-start"
         >
           <!-- LOGO -->
-          <div
-            class="col-12 col-md-4 col-lg-3 d-flex gap-3 align-items-center mb-4 justify-content-center justify-content-lg-start"
-          >
+          <div class="col-12 col-md-4 col-lg-4">
             <a
               href="./index.html"
               class="link-underline-opacity-0 d-flex align-items-center gap-2"
             >
               <img
-                src="./img/EH1.png"
+                src=""
                 alt="icono"
                 class="img-fluid"
                 style="width: 130px; height: 100px"
@@ -1160,110 +1189,129 @@
           </div>
 
           <!-- INFORMACIÓN -->
-          <div class="col-12 col-md-4 col-lg-3 text-light mb-4">
+          <div class="col-12 col-md-4 col-lg-4 text-light mb-4">
             <h4 class="my-2">Información</h4>
             <ul class="list-unstyled my-3">
-              <li class="my-2">
+              <li class="p-2">
                 <a
                   href="./pages/nosotros.html"
                   class="text-light link-underline-opacity-50 link-underline-opacity-100-hover"
-                  >Acerca de nosotros</a
+                  >Tecnologias</a
                 >
               </li>
-              <li class="my-2">
+              <li class="p-2">
                 <a
                   href="#"
                   class="text-light link-underline-opacity-50 link-underline-opacity-100-hover"
-                  >Servicio al cliente</a
+                  >Electrodomésticos</a
                 >
               </li>
-              <li class="my-2">
+              <li class="p-2">
                 <a
                   href="#"
                   class="text-light link-underline-opacity-50 link-underline-opacity-100-hover"
-                  >Términos y condiciones</a
+                  >Sucursales</a
                 >
               </li>
-              <li class="my-2">
+              <li class="p-2">
                 <a
                   href="#"
                   class="text-light link-underline-opacity-50 link-underline-opacity-100-hover"
-                  >Políticas de privacidad</a
+                  >Contactanos</a
+                >
+              </li>
+              <li class="p-2">
+                <a
+                  href="#"
+                  class="text-light link-underline-opacity-50 link-underline-opacity-100-hover"
+                  >Sobre nosotros</a
                 >
               </li>
             </ul>
           </div>
 
           <!-- REDES SOCIALES -->
-          <div class="col-12 col-md-4 col-lg-3 text-light mb-4">
+          <div class="col-12 col-md-4 col-lg-4 text-light mb-4">
             <h4 class="my-2">Redes Sociales</h4>
             <ul class="list-unstyled fs-5 my-3">
               <li class="my-2">
-                <a
-                  href="#"
-                  class="text-light text-decoration-none link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  <i class="bi bi-facebook text-primary"></i> Facebook
+                <a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-instagram text-danger me-2"></i> Instagram
                 </a>
               </li>
               <li class="my-2">
-                <a
-                  href="#"
-                  class="text-light text-decoration-none link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  <i class="bi bi-whatsapp text-success"></i> Whatsapp
+                <a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-whatsapp text-success me-2"></i> Whatsapp
                 </a>
               </li>
               <li class="my-2">
-                <a
-                  href="#"
-                  class="text-light text-decoration-none link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  <i class="bi bi-instagram text-danger"></i> Instagram
+                <a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-youtube text-danger me-2"></i> YouTube
                 </a>
               </li>
               <li class="my-2">
-                <a
-                  href="#"
-                  class="text-light text-decoration-none link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
-                  <i class="bi bi-linkedin text-primary-emphasis"></i> Linkedin
+                <a href="#" class="text-light text-decoration-none">
+                  <i class="bi bi-tiktok text-dark me-2"></i> TikTok
                 </a>
               </li>
             </ul>
           </div>
 
           <!-- MÉTODOS DE PAGO -->
-          <div class="col-12 col-md-12 col-lg-3 text-light mb-4">
-            <h4 class="my-2">Métodos de Pago</h4>
-            <ul
-              class="list-unstyled my-3 d-flex justify-content-center justify-content-lg-start gap-3"
-            >
-              <li>
-                <a
-                  href="#"
-                  class="link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
+          <div class="col-12 col-md-12 col-lg-12 text-light mb-4">
+            <div class="d-flex justify-content-evenly">
+              <h4 class="mx-4">Métodos de Pago</h4>
+              <ul class="list-unstyled d-flex gap-3 justify-content-center">
+                <li class="mx-3">
                   <img
-                    src="https://img.icons8.com/?size=100&id=Sq0VNi1Afgmj&format=png&color=000000"
-                    alt="icono"
-                    class="img-fluid metodos-pagos"
+                    src="https://img.icons8.com/color/48/000000/visa.png"
+                    alt="Visa"
+                    class="img-fluid w-100"
+                    
                   />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  class="link-underline-opacity-25 link-underline-opacity-100-hover"
-                >
+                </li>
+                <li class="mx-3">
                   <img
-                    src="https://img.icons8.com/?size=100&id=11079&format=png&color=000000"
-                    alt="icono"
-                    class="img-fluid metodos-pagos"
+                    src="https://img.icons8.com/color/48/000000/mastercard-logo.png"
+                    alt="Mastercard"
+                    class="img-fluid w-100"
+                    
                   />
-                </a>
-              </li>
-            </ul>
+                </li>
+                <li class="mx-3">
+                  <img
+                    src="https://img.icons8.com/color/48/000000/amex.png"
+                    alt="Amex"
+                    class="img-fluid w-100"
+                    
+                  />
+                </li>
+                <li class="mx-3 d-none d-md-block">
+                  <img
+                    src="https://img.icons8.com/color/48/000000/paypal.png"
+                    alt="Paypal"
+                    class="img-fluid w-100"
+                    
+                  />
+                </li>
+                <li class="mx-3 d-none d-md-block">
+                  <img
+                    src="https://img.icons8.com/color/48/000000/apple-pay.png"
+                    alt="Apple Pay"
+                    class="img-fluid w-100"
+                    
+                  />
+                </li>
+                <li class="mx-3 d-none d-md-block">
+                  <img
+                    src="https://img.icons8.com/color/48/000000/google-pay.png"
+                    alt="Google Pay"
+                    class="img-fluid w-100"
+                    
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

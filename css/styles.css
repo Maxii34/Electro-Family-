@@ -6,11 +6,21 @@ body {
     min-height: 100vh;
 }
 
+/*Efecto-parallax*/
+body {
+  background-image: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_1280.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 main {
     flex-wrap:1;
 }
 
-nav {
+nav, footer {
     background-color: #233d4d;
 }
 
@@ -66,7 +76,7 @@ nav {
         background-color: #0077b6;
         color: #f3f3f3;
         font-size: 15px;
-        border: 3px solid #f3f3f3;
+        border: 3px solid #ffffff5b;
     }
 }
 
@@ -78,3 +88,49 @@ nav {
     font-size: 15px;
      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
+.Des-hotsale {
+    padding: 4px;
+    margin: 2px;
+    background-color: #e85d04;
+    border-radius: 7px;
+    font-size: 15px;
+     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/*jsjsjs*/
+
+.marcas-marquee {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marcas-marquee p {
+  display: inline-block;
+  animation: deslizar 50s linear infinite;
+}
+
+.marcas-marquee span {
+  margin-right: rem;
+  display: inline-block;
+  color: #555;
+  font-weight: 500;
+}
+
+.bg-css-grilla {
+    background-color: #343a40;
+}
+
+/*Carrito*/
+
+.div-carrito {
+    width: auto;
+    height: 150px;
+}
+.carrito-img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+

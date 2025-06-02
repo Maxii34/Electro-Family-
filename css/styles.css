@@ -1,40 +1,44 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+   font-family: "Roboto", sans-serif;
 }
 
 /*Efecto-parallax*/
 body {
-  background-image: url('https://cdn.pixabay.com/photo/2018/01/30/22/50/forest-3119826_1280.jpg');
+  background-image: url("https://png.pngtree.com/background/20230520/original/pngtree-wallpapers-abstract-art-picture-image_2679300.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+body .modal-open {
+  padding-right: 15px; /* Ajusta según el tamaño del scroll de tu navegador */
+}
+
 
 main {
-    flex-wrap:1;
+  flex-wrap: 1;
 }
 
-nav, footer {
-    background-color: #233d4d;
+nav,
+footer {
+  background-color: #233d4d;
 }
-
-
 
 .metodos-pagos {
-    width: 100px;
-    height: 80px;
+  width: 100px;
+  height: 80px;
 }
 
 .h-css {
-    height: 400px;
-    overflow: hidden;
-    object-fit: cover;
+  height: 400px;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .fondo-degradado {
@@ -44,50 +48,47 @@ nav, footer {
 }
 
 .efecto {
-    color: rgba(99, 74, 11, 0.966);
-    border: 1px solid goldenrod;
-    padding: 6px;
-    border-radius: 8px;
-    text-decoration: none;
+  color: rgba(99, 74, 11, 0.966);
+  border: 1px solid goldenrod;
+  padding: 6px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
-
-
 .btn-cards {
-    border-radius: 20px;
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-    background-color: #023e8a;
+  border-radius: 20px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  background-color: #023e8a;
+  color: #f3f3f3;
+  border: 3px solid #023e8a;
+  font-size: 15px;
+  transition: 600ms;
+  &:hover {
+    background-color: #0077b6;
     color: #f3f3f3;
-    border: 3px solid #023e8a;
     font-size: 15px;
-    transition: 600ms;
-    &:hover {
-        background-color: #0077b6;
-        color: #f3f3f3;
-        font-size: 15px;
-        border: 3px solid #ffffff5b;
-    }
+    border: 3px solid #ffffff5b;
+  }
 }
 
 .Descuento {
-    padding: 4px;
-    margin: 2px;
-    background-color: #d68910 ;
-    border-radius: 7px;
-    font-size: 15px;
-     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  margin: 2px;
+  background-color: #d68910;
+  border-radius: 7px;
+  font-size: 15px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 .Des-hotsale {
-    padding: 4px;
-    margin: 2px;
-    background-color: #e85d04;
-    border-radius: 7px;
-    font-size: 15px;
-     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  margin: 2px;
+  background-color: #e85d04;
+  border-radius: 7px;
+  font-size: 15px;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
-
 
 /*jsjsjs*/
 
@@ -110,19 +111,19 @@ nav, footer {
 }
 
 .bg-css-grilla {
-    background-color: #233d4d;
+  background-color: #233d4d;
 }
 
 /*Carrito*/
 
 .div-carrito {
-    width: auto;
-    height: 150px;
+  width: auto;
+  height: 150px;
 }
 .carrito-img {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
+  width: 150px;
+  height: auto;
+  object-fit: cover;
 }
 
 .img-container {
@@ -140,3 +141,5 @@ nav, footer {
   display: block;
   border: 2px solid #f3f3f3;
 }
+
+/*botones*/

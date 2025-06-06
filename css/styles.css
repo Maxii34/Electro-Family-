@@ -230,3 +230,21 @@ footer {
     height: auto;
     
 }
+
+.banner {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* ajustá esta altura a gusto */
+  object-fit: cover;
+  display: block;
+}
+
+.Cards-01 {
+  border-radius: 7px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4), 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: 600ms;
+  &:hover {
+    transition: scale(1.3);
+    transition: 600ms;
+  }
+}

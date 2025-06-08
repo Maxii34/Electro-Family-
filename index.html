@@ -89,7 +89,7 @@
                 placeholder="Ingresá tu búsqueda"
                 aria-label="Buscar"
               />
-              <button class="btn btn-outline-dark me-2" type="submit">
+              <button class="btn btn-dark me-2" type="submit">
                 <i class="bi bi-search"></i>
               </button>
               <button
@@ -100,27 +100,20 @@
               >
                 Login
               </button>
-              <a href="./pages/registro.html" class="btn btn-dark me-1"
-                >Register</a
+              <button
+                type="button"
+                class="btn btn-dark position-relative"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCarrito"
               >
+                <i class="bi bi-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger overflow-hidden"
+                >
+                  3
+                </span>
+              </button>
             </form>
-          </div>
-
-          <!-- ÍCONO DE CARRITO -->
-          <div class="m-2">
-            <button
-              type="button"
-              class="btn btn-outline-dark position-relative"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCarrito"
-            >
-              <i class="bi bi-cart"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger overflow-hidden"
-              >
-                3
-              </span>
-            </button>
           </div>
         </div>
       </nav>
@@ -145,7 +138,8 @@
       </div>
     </header>
 
-    <main class="container-fluid">
+    <main>
+      <!--Carousel-->
       <section class="mb-4 mt-1">
         <div
           id="carouselExampleIndicators"
@@ -240,15 +234,17 @@
         </div>
       </section>
       <!--Electrodomesticos-->
-      <section class="my-4">
-        <h1 class="display-6">Electrodomesticos</h1>
-      </section>
+
+      <div class="container titulo-seccion mt-4">
+        <h2>Helectrodomesticos.</h2>
+        <a href="#" class="ver-mas">VER MÁS</a>
+      </div>
 
       <!--Inicio grilla-->
-      <section class="my-2 px-3 py-2 rounded">
-        <div class="row bg-css-grilla">
-          <div class="col-12 col-md-6 col-lg-3 my-2 Cards-01">
-            <div class="card Cards-01">
+      <section class="container mb-2">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_2.png"
@@ -256,9 +252,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -278,22 +274,18 @@
                   </p>
                 </div>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center me-1 btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_3.png"
@@ -301,9 +293,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -321,22 +313,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_4.png"
@@ -344,9 +332,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -364,22 +352,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 d-block d-md-none d-lg-block">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_12.png"
@@ -387,9 +371,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -407,24 +391,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row bg-css-grilla">
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_tvled1.png"
@@ -432,9 +410,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -452,22 +430,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_tvled2.png"
@@ -475,9 +449,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -495,22 +469,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_tvled3.png"
@@ -518,9 +488,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -538,22 +508,18 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2 d-block d-md-none d-lg-block">
-            <div class="card shadow">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
               <div class="img-container img-cards">
                 <img
                   src="/img/Screenshot_tvled4.png"
@@ -561,9 +527,9 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -581,14 +547,10 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
@@ -599,15 +561,16 @@
       </section>
 
       <!--Tecnología-->
-      <section class="my-4">
-        <h1 class="display-6">Tecnología</h1>
-      </section>
+      <div class="container titulo-seccion mt-4">
+        <h2>Tecnologias.</h2>
+        <a href="#" class="ver-mas">VER MÁS</a>
+      </div>
 
-      <section class="my-4 bg-css-grilla px-3 py-2 rounded">
+      <section class="container mb-4">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/sm-a155_galaxy-a15-lte_blue-black_front.webp"
                   class="card-img-top"
@@ -619,9 +582,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -640,23 +603,19 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/sm-a155_galaxy-a15-lte_blue-black_front.webp"
                   class="card-img-top"
@@ -668,9 +627,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -689,23 +648,19 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/sm-a155_galaxy-a15-lte_blue-black_front.webp"
                   class="card-img-top"
@@ -717,9 +672,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -738,14 +693,10 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
@@ -753,10 +704,10 @@
             </div>
           </div>
           <div
-            class="col-12 col-md-6 col-lg-3 my-2 d-block d-md-none d-lg-block"
+            class="col-12 col-md-4 col-lg-3 my-2 d-block d-md-none d-lg-block"
           >
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/sm-a155_galaxy-a15-lte_blue-black_front.webp"
                   class="card-img-top"
@@ -768,9 +719,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -789,14 +740,10 @@
                   12x $66,589 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
@@ -807,15 +754,16 @@
       </section>
 
       <!--Artículos para el hogar-->
-      <section class="my-4">
-        <h1 class="display-6">Artículos para el hogar</h1>
-      </section>
+      <div class="container titulo-seccion mt-4">
+        <h2>Articulos para el hogar.</h2>
+        <a href="#" class="ver-mas">VER MÁS</a>
+      </div>
 
-      <section class="my-4 bg-css-grilla px-3 py-2 rounded">
+      <section class="container mb-4">
         <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/Screenshot_hogar3.png"
                   class="card-img-top"
@@ -827,9 +775,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -847,23 +795,19 @@
                   8x $50,042 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/Screenshot_hogar.png"
                   class="card-img-top"
@@ -875,9 +819,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -895,23 +839,19 @@
                   8x $50,042 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 my-2">
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+          <div class="col-12 col-md-4 col-lg-3 my-2">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/Screenshot_hogar5.png"
                   class="card-img-top"
@@ -923,9 +863,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -943,14 +883,10 @@
                   8x $50,042 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
@@ -958,10 +894,10 @@
             </div>
           </div>
           <div
-            class="col-12 col-md-6 col-lg-3 my-2 d-block d-md-none d-lg-block"
+            class="col-12 col-md-4 col-lg-3 my-2 d-block d-md-none d-lg-block"
           >
-            <div class="card shadow">
-              <div class="position-relative  img-container img-cards">
+            <div class="card cards">
+              <div class="position-relative img-container img-cards">
                 <img
                   src="/img/Screenshot_hogar2.png"
                   class="card-img-top"
@@ -973,9 +909,9 @@
               >
                 Envío Gratis
               </div>
-              <div class="card-body">
+              <div class="p-2">
                 <h5 class="card-title">Card title</h5>
-                <p class=">
+                <p class="">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Impedit, voluptatem.
                 </p>
@@ -993,14 +929,10 @@
                   8x $50,042 - Sin interes.
                 </p>
                 <div class="d-flex justify-content-evenly">
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards me-1"
+                  <a href="#" class="button-27 text-nowrap text-center me-1"
                     >Ver Mas
                   </a>
-                  <a
-                    href="#"
-                    class="btn shadow text-nowrap text-center btn-cards"
+                  <a href="#" class="button-27 text-nowrap text-center"
                     ><i class="bi bi-cart"></i> Agregar
                   </a>
                 </div>
@@ -1009,42 +941,6 @@
           </div>
         </div>
       </section>
-
-      <!--<section class="container my-2">
-        <h5 class="text-dark">Publicidad</h5>
-        <div class="row">
-          <div class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1">
-            <div class="card">
-              <div class="img-container img-cards">
-                <img src="..." class="card-img-top" alt="..." />
-              </div>
-            </div>
-            <img src=" alt=" class=" />
-          </div>
-
-          <div
-            class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1 d-none d-md-block"
-          >
-            <div class="card">
-              <div class="img-container img-cards">
-                <img src="..." class="card-img-top" alt="..." />
-              </div>
-            </div>
-            <img src=" alt=" class=" />
-          </div>
-
-          <div
-            class="col-12 col-md-4 col-lg-4 border bg-dark shadow rounded-1 d-none d-md-block"
-          >
-            <div class="card">
-              <div class="img-container img-cards">
-                <img src="..." class="card-img-top" alt="..." />
-              </div>
-            </div>
-            <img src=" alt=" class=" />
-          </div>
-        </div>
-      </section>-->
 
       <!--Modal-->
       <section>
@@ -1134,22 +1030,22 @@
           aria-hidden="true"
         >
           <div class="modal-dialog">
-            <div class="modal-content bg-dark">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
-                  Iniciar Sesion
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Iniciar Sesión
                 </h1>
                 <button
                   type="button"
-                  class="btn-close"
+                  class="btn-close btn-close-white"
                   data-bs-dismiss="modal"
-                  aria-label="Close"
+                  aria-label="Cerrar"
                 ></button>
               </div>
               <div class="modal-body">
                 <form>
                   <div class="mb-3">
-                    <label for="email" class="form-label text-light"
+                    <label for="email" class="form-label"
                       >Correo electrónico</label
                     >
                     <input
@@ -1162,9 +1058,7 @@
                   </div>
 
                   <div class="mb-3">
-                    <label for="password" class="form-label text-light"
-                      >Contraseña</label
-                    >
+                    <label for="password" class="form-label">Contraseña</label>
                     <input
                       type="password"
                       class="form-control"
@@ -1177,15 +1071,27 @@
                   <button type="submit" class="btn btn-primary w-100 my-2">
                     Iniciar sesión
                   </button>
-                  <button type="submit" class="btn btn-info w-100 my-2">
-                    Iniciar con Google
+                  <button
+                    type="button"
+                    class="btn btn-outline-light w-100 mb-3"
+                  >
+                    <i class="bi bi-google me-2"></i> Iniciar con Google
                   </button>
                 </form>
+
+                <div class="text-center mt-3">
+                  <small
+                    >¿No tenés una cuenta?
+                    <a href="#" class="text-info text-decoration-underline"
+                      >Registrate</a
+                    >
+                  </small>
+                </div>
               </div>
-              <div class="modal-footer">
+              <div class="modal-footer border-0">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="btn btn-secondary w-100"
                   data-bs-dismiss="modal"
                 >
                   Cerrar

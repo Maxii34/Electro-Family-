@@ -1,5 +1,5 @@
 # 🖥️ ElectroFamily – Página Web Informativa
-Bienvenido/a a ElectroFamily, una página web desarrollada como parte de un proyecto educativo y práctico para afianzar conocimientos en maquetado web, utilizando principalmente HTML5, CSS3 y Bootstrap 5.
+ElectroFamily, una página web desarrollada para afianzar conocimientos en maquetado web, utilizando principalmente HTML5, CSS3 y Bootstrap 5.
 
 ## 🔧 Tecnologías utilizadas
 - 💻 HTML5

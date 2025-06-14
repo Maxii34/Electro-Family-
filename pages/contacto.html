@@ -144,9 +144,157 @@
         </p>
       </div>
     </header>
-    <main class="container-fluid">
+    <main>
       <section>
-        
+        <div class="container my-5">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-6 order-2 order-md-1 order-lg-1">
+              <div class="card Sombra rounded-4">
+                <div class="card-body p-4">
+                  <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+                  <form>
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ingresa tu nombre"
+                        minlength="3"
+                        maxlength="80"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="apellido" class="form-label">Apellido*</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="apellido"
+                        name="apellido"
+                        placeholder="Ingresa tu apellido"
+                        minlength="3"
+                        maxlength="80"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="email" class="form-label"
+                        >Correo electrónico*</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Ejemplo@Gmail.com"
+                        minlength="5"
+                        maxlength="100"
+                        required
+                      />
+                    </div>
+
+                    <div class="my-3">
+                      <label for="pais" class="">País*</label>
+                      <select
+                        id="pais"
+                        name="pais"
+                        class="form-select"
+                        required
+                      >
+                        <option value="">Seleccione su país</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="costa_rica">Costa Rica</option>
+                        <option value="cuba">Cuba</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="el_salvador">El Salvador</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="mexico">México</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="panama">Panamá</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="republica_dominicana">
+                          República Dominicana
+                        </option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="telefono" class="form-label">Teléfono*</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="+54 381 787-6537"
+                        minlength="7"
+                        maxlength="20"
+                        pattern="^\+?[0-9\s\-()]+$"
+                        title="Ingrese un número válido. Ej: +54 381 123-4567"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje*</label>
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        name="mensaje"
+                        rows="2"
+                        placeholder="Deja tu mensaje aquí."
+                        minlength="10"
+                        maxlength="400"
+                        required
+                      ></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                      <button type="submit" class="btn btn-dark">Enviar</button>
+                    </div>
+                    <a href="/pages/error404.html">
+                      <h6>¿Aún no tenés cuenta? <strong>Registrate acá</strong></h6>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--Imagen-->
+            <div class="col-12 col-md-6 col-lg-6 order-1 order-md-2 order-lg-2">
+              <div class="overflow-hidden Sombra rounded">
+                <img
+                  src="https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt=""
+                  class="w-100 h-75 rounded zoom-hover"
+                  loading="lazy"
+                />
+              </div>
+              <!--texto--->
+              <div class="">
+                <h5></h5>
+                <p>
+                  Si quieres saber más sobre nuestras exquisitas recetas,
+                  productos y creaciones únicas, no dudes en ponerte en
+                  contacto. Completa el formulario y nuestro equipo estará
+                  encantado de responderte con todo el cariño y dulzura que
+                  mereces.
+                </p>
+                <b>¡Estamos aquí para hacer tus momentos aún más dulces! 🍬</b>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 

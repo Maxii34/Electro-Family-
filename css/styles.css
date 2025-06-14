@@ -313,4 +313,84 @@ footer {
   transform: translateX(4px);
 }
 
+/*Formulario*/
 
+/* Aplica sombra suave y fondo claro */
+.Sombra {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+}
+
+/* Estilo general del formulario */
+form {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Títulos */
+.card-body h2 {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs y selects */
+.form-control,
+.form-select {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Etiquetas */
+.form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+/* Botón */
+.btn-dark {
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-dark:hover {
+  background-color: #000;
+  transform: scale(1.02);
+}
+
+/* Enlace */
+a {
+  display: block;
+  margin-top: 10px;
+  color: #0d6efd;
+  text-align: center;
+  text-decoration: none;
+}
+
+a >h6 {
+  color: #000;
+}
+
+a > h6 > strong:hover {
+  color: #023e8a;
+  text-decoration: underline;
+}
+
+
+/* Responsive en móviles */
+@media (max-width: 576px) {
+  .card-body {
+    padding: 1.5rem;
+  }
+
+  .btn-dark {
+    font-size: 1rem;
+  }
+}

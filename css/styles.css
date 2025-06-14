@@ -353,20 +353,20 @@ form {
 }
 
 /* Botón */
-.btn-dark {
+.dark {
   padding: 10px;
   font-weight: 500;
   border-radius: 8px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-dark:hover {
+.dark:hover {
   background-color: #000;
   transform: scale(1.02);
 }
 
 /* Enlace */
-a {
+div > a {
   display: block;
   margin-top: 10px;
   color: #0d6efd;
@@ -390,7 +390,7 @@ a > h6 > strong:hover {
     padding: 1.5rem;
   }
 
-  .btn-dark {
+  .dark {
     font-size: 1rem;
   }
 }

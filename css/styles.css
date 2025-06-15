@@ -394,3 +394,118 @@ a > h6 > strong:hover {
     font-size: 1rem;
   }
 }
+
+
+
+.imgtop {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 10px;  /* Igual que el card si tiene bordes */
+  border-top-right-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .imgtop {
+    height: 170px;
+  }
+}
+
+
+.card-carousel {
+  overflow: hidden;
+  border-radius: 10px; /* o el valor que uses */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: 300ms;
+  will-change: transform;
+    &:hover {
+    transform: scale(1.02);
+    transition: 300ms;
+  }
+}
+
+
+.div-info {
+ background-color: #333; 
+ color: #f3f3f3;
+}
+
+.title {
+  text-align: center;
+  color: #f3f3f3;
+}
+
+.text-desc {
+  margin-top: 8px;
+  color: #dde0e6;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+
+.btn-card-carousel {
+  background-color: #023e8a;
+  color: #f3f3f3;
+  width: 100%;
+  margin: 0px;
+}
+
+/*grilla ofertas*/
+
+.card-producto {
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  background-color: #1e1e1e;
+  color: #dde0e6;
+  font-family: sans-serif;
+}
+
+.imgtop {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Botón flotante */
+.badge-online {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  background-color: #1a73e8;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 10px 0px 0px 10px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.card-body.div-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.text-desc {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #dde0e6;
+}

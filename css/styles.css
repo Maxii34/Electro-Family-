@@ -452,11 +452,24 @@ a > h6 > strong:hover {
   margin: 0px;
 }
 
+@media (max-width: 576px) {
+  .card-carousel {
+    height: 350px; /* o el alto que usaste */
+    width: 100%;
+  }
+
+  .card-producto img {
+    height: 250px; /* ajustá este valor a tu gusto */
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
 /*grilla ofertas*/
 
 .card-producto {
   width: 260px;
-  border-radius: 10px;
+  border-top: 10px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   background-color: #1e1e1e;
@@ -508,4 +521,90 @@ a > h6 > strong:hover {
   font-size: 14px;
   line-height: 1.4;
   color: #dde0e6;
+}
+
+.bg-gris {
+  background-color: #e7e4e4;
+}
+
+/*card foal de ofertas*/
+
+.card-new {
+  position: relative;
+  width: 11.875em;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5em;
+  overflow: hidden; /* evita que el botón se "escape" */
+}
+
+/* Botón emergente */
+.card-new::after {
+  content: "Ver Mas";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: -2.5em; /* coincide con su altura */
+  background: #13293d;
+  color: #fff;
+  height: 2.5em;
+  width: 100%;
+  transition: all 150ms ease-in-out;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+/* Cuando el mouse pasa */
+.card-new:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card-new:active {
+  transform: scale(0.98);
+}
+
+.card-new:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+/* Otros elementos internos */
+.card-new .title-new {
+  position: absolute;
+  left: 0.625em;
+  bottom: 2.8em; /* lo subimos para que el botón tenga lugar */
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #000;
+}
+
+.card-new .price-new {
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.25em; /* también lo subimos un poco */
+  font-size: 0.9em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000;
+}
+
+.image-new {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.text-new {
+  max-width: 55px;
 }

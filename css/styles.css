@@ -608,3 +608,117 @@ a > h6 > strong:hover {
 .text-new {
   max-width: 55px;
 }
+
+/*Minibaner*/
+.envio-gratis {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  background-color: #ff7f2a; /* azul marino oscuro */
+  color: white;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.envio-gratis svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.icono {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.texto {
+  display: inline-flex;
+  font-size: 28px;
+  padding: 5px;
+}
+
+.div-tex {
+    display: inline-flex;
+}
+
+.mini-circulos {
+
+}
+
+.img-options {
+  max-width: 130px;
+  min-width: 100px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 600ms;
+  &:hover {
+    transition: transform 0.6s ease;
+    transition: 600ms;
+  }
+}
+
+.div-options {
+  border: 2px solid darkblue;
+  width: 130px;
+  height: auto;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+/*baner*/
+.barra-envios {
+  background-color: #f57c00; /* naranja fuerte */
+  padding: 2px 0;
+}
+
+.icono-box {
+  background-color: #002147; /* azul marino */
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+}
+
+
+
+.barra-iconos {
+  background-color: white;
+}
+
+.icono-circular {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #002147; /* azul marino */
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.icono-circular:hover {
+  background-color: #004080;
+  transform: scale(1.1);
+}
+
+/* Etiqueta opcional debajo del ícono */
+.icono-circular .etiqueta {
+  position: absolute;
+  bottom: -22px;
+  width: 100px;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #002147;
+  font-weight: bold;
+  left: 50%;
+  transform: translateX(-50%);
+}

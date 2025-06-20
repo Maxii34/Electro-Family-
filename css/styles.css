@@ -685,40 +685,64 @@ a > h6 > strong:hover {
   border-radius: 5px;
 }
 
-
-
 .barra-iconos {
   background-color: white;
 }
 
 .icono-circular {
   position: relative;
-  width: 70px;
-  height: 70px;
-  background-color: #002147; /* azul marino */
+  width: 80px;
+  height: 80px;
+  background-color: #00509d; /* azul moderno */
   border-radius: 50%;
-  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  transition: transform 0.3s ease, background-color 0.3s;
+  transition: transform 0.3s ease, background-color 0.3s, box-shadow 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .icono-circular {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+.icono-circular img,
+.icono-circular svg {
+  width: 40px;
+  height: 40px;
+  fill: white; /* para SVG inline */
+  filter: brightness(0) invert(1); /* para imágenes PNG negras */
+  transition: transform 0.3s ease;
 }
 
 .icono-circular:hover {
-  background-color: #004080;
+  background-color: #007bff; /* color al hacer hover */
   transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* sombra suave */
 }
 
-/* Etiqueta opcional debajo del ícono */
+/* Etiqueta debajo del ícono */
 .icono-circular .etiqueta {
   position: absolute;
   bottom: -22px;
   width: 100px;
   text-align: center;
   font-size: 0.75rem;
-  color: #002147;
+  color: #333;
   font-weight: bold;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+.contribucion {
+  font-size: 8px;
+  color: rgba(0, 0, 0, 0.5); /* gris tenue */
+  text-align: center;
+  margin-top: 8px;
+  user-select: none;
+  font-family: Arial, sans-serif;
 }

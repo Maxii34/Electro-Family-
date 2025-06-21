@@ -526,6 +526,9 @@ a > h6 > strong:hover {
 .bg-gris {
   background-color: #e7e4e4;
 }
+.bg-404 {
+  background-color: #f5ebdc;
+}
 
 /*card foal de ofertas*/
 

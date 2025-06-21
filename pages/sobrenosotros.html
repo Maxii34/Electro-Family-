@@ -21,10 +21,19 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg px-3">
-        <div class="container">
-          <a class="navbar-brand text-light fs-3" href="/index.html"
-            >Electro Family <i class="bi bi-basket2-fill"></i
-          ></a>
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Logo -->
+          <div class="d-flex align-items-center">
+            <a
+              class="navbar-brand text-light fs-3 d-flex align-items-center"
+              href="/index.html"
+            >
+              Electro Family <i class="bi bi-basket2-fill ms-2"></i>
+            </a>
+          </div>
+
           <button
             class="navbar-toggler ms-auto"
             type="button"
@@ -37,18 +46,20 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div
+            class="collapse navbar-collapse d-flex align-items-center"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a
-                  class="nav-link active text-light"
-                  aria-current="page"
-                  href="/index.html"
+                <a class="nav-link active text-light" href="/index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="/pages/ofertas.html">Ofertas</a>
+                <a class="nav-link text-light" href="/pages/ofertas.html"
+                  >Ofertas</a
+                >
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -58,18 +69,29 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Opciones
+                  Mas
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="/pages/contacto.html">Contacto</a>
+                    <a class="dropdown-item" href="/pages/contacto.html"
+                      >Contacto</a
+                    >
                   </li>
-                  <li><a class="dropdown-item" href="/pages/sucursales.html">Sucursales</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/sucursales.html"
+                      >Sucursales</a
+                    >
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="/pages/sobrenosotros.html">Sobre nosotros</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/pages/sobrenosotros.html"
+                      >Sobre nosotros</a
+                    >
+                  </li>
                 </ul>
               </li>
             </ul>
+
             <form class="d-flex align-items-center" role="search">
               <input
                 class="form-control me-2"
@@ -77,7 +99,7 @@
                 placeholder="Ingresá tu búsqueda"
                 aria-label="Buscar"
               />
-              <button class="btn btn-outline-dark me-2" type="submit">
+              <button class="btn btn-dark me-2" type="submit">
                 <i class="bi bi-search"></i>
               </button>
               <button
@@ -88,28 +110,24 @@
               >
                 Login
               </button>
-              <a href="/pages/registro.html" class="btn btn-dark me-1">Register</a>
-            </form>
-          </div>
-
-          <!-- ÍCONO DE CARRITO -->
-          <div class="m-2">
-            <button
-              type="button"
-              class="btn btn-outline-dark position-relative"
-              data-bs-toggle="modal"
-              data-bs-target="#modalCarrito"
-            >
-              <i class="bi bi-cart"></i>
-              <span
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger overflow-hidden"
+              <button
+                type="button"
+                class="btn btn-dark position-relative"
+                data-bs-toggle="modal"
+                data-bs-target="#modalCarrito"
               >
-                3
-              </span>
-            </button>
+                <i class="bi bi-cart"></i>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  3
+                </span>
+              </button>
+            </form>
           </div>
         </div>
       </nav>
+
       <div class="bg-dark marcas-marquee">
         <p class="m-0">
           <span class="mx-3">Drean</span>
@@ -130,9 +148,7 @@
         </p>
       </div>
     </header>
-    <main class="container-fluid">
-
-    </main>
+    <main class="container-fluid"></main>
 
     <footer class="py-4">
       <div class="container">
@@ -141,10 +157,7 @@
         >
           <!-- LOGO -->
           <div class="col-12 col-md-4 col-lg-4">
-            <a
-              href="/"
-              class=" gap-2"
-            >
+            <a href="/" class="gap-2">
               <img
                 src="/img/ChatGPT  Icono.png"
                 alt="Helectroamuly icono"

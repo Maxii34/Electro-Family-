@@ -9,7 +9,6 @@ ElectroFamily, una página web desarrollada para afianzar conocimientos en maque
 - 🌐 Hosting: Netlify
 
 ## Mira el demo [aqui.](https://electrofamily.netlify.app/) 
-- (Demo en progreso)  
 
 ## 🧠 Objetivo
 Este proyecto tiene como finalidad:
